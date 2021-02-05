@@ -9,14 +9,6 @@ namespace Xamarin.Forms.Platform.WPF
 	{
 		public virtual System.Windows.DataTemplate GetTemplate(Cell cell)
 		{
-			/*if (cell.RealParent is ListView)
-			{
-				if (cell.GetIsGroupHeader<ItemsView<Cell>, Cell>())
-					return (System.Windows.DataTemplate)System.Windows.Application.Current.Resources["ListViewHeaderTextCell"];
-
-				return (System.Windows.DataTemplate)System.Windows.Application.Current.Resources["ListViewTextCell"];
-			}*/
-
 			return (System.Windows.DataTemplate)System.Windows.Application.Current.Resources["TextCell"];
 		}
 	}
